@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.HomeFragment">
+   <include
+       layout="@layout/apptopbar"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:focusable="false"
+          android:focusableInTouchMode="true"
+          android:orientation="vertical">
+
+         <EditText
+             android:id="@+id/editTextTextPersonName4"
+             android:layout_width="match_parent"
+             android:layout_height="40dp"
+             android:layout_marginStart="32dp"
+             android:layout_marginTop="68dp"
+             android:layout_marginEnd="16dp"
+             android:background="@drawable/search_edt_background"
+             android:drawableStart="@drawable/search_24"
+             android:drawablePadding="10dp"
+             android:ems="10"
+             android:hint="Recherchez votre produit "
+             android:fontFamily="monospace"
+             android:inputType="textPersonName"
+             android:padding="8dp"
+             android:textColorHint="#504D4D"
+             android:textStyle="italic"
+             app:layout_constraintEnd_toStartOf="@+id/imageView4"
+             app:layout_constraintHorizontal_bias="0.021"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+
+         <ImageView
+             android:id="@+id/imageView4"
+             android:layout_width="match_parent"
+             android:layout_height="155dp"
+             android:layout_marginTop="11dp"
+             android:layout_marginEnd="25dp"
+             android:layout_marginStart="25dp"
+             android:scaleType="fitXY"
+             android:src="@drawable/banner3"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.0"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintVertical_bias="0.2" />
+
+         <com.google.android.material.tabs.TabLayout
+             android:id="@+id/tablayout"
+             app:tabTextAppearance="@style/MyCustomTabText"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="3dp"
+             android:overScrollMode="never"
+             app:tabBackground="@drawable/backgrounditem"
+             app:tabSelectedTextColor="@color/bleue_foncer"
+             app:tabMaxWidth="0dp"
+             app:tabPaddingEnd="30dp"
+             app:tabPaddingStart="24dp"
+             app:tabGravity="center"
+             app:tabRippleColor="@null"
+             app:tabIndicatorHeight="0dp">
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/onglet_tous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:text="Tous"/>
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/onglet_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nouveau"/>
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/onglet_categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Catégories"/>
+         </com.google.android.material.tabs.TabLayout>
+
+         <androidx.viewpager2.widget.ViewPager2
+             android:id="@+id/viewPage"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" />
+      </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

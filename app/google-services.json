@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "400066066530",
+    "project_id": "ecomme-shop",
+    "storage_bucket": "ecomme-shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400066066530:android:888b8b7b9fb6b02b1fb93b",
+        "android_client_info": {
+          "package_name": "com.example.projetdam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400066066530-q0i9q5u9tjinfjdmdsgba2a5udcjsdr5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9Gn8AvJG9YcGevaYfytx99uNLn7HLazk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400066066530-q0i9q5u9tjinfjdmdsgba2a5udcjsdr5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grap"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.projetdam.Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/commandeFragment"
+        android:name="com.example.projetdam.Fragment.CommandeFragment"
+        android:label="fragment_commande"
+        tools:layout="@layout/fragment_commande" />
+    <fragment
+        android:id="@+id/panierFragment"
+        android:name="com.example.projetdam.Fragment.PanierFragment"
+        android:label="fragment_panier"
+        tools:layout="@layout/fragment_panier" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.projetdam.Fragment.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+</navigation>
